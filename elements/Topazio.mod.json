@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "rubino",
+    "texture": "topazio_gem",
     "customModelName": "Normal",
-    "name": "Rubino",
+    "name": "Topazio",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:Eternamod"
+      "value": "MISC"
     },
     "stackSize": 64,
     "enchantability": 0,

@@ -1,0 +1,29 @@
+{
+  "group": "prova",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "prova:topazio"
+    },
+    "1": {
+      "item": "prova:topazio"
+    },
+    "2": {
+      "item": "prova:topazio"
+    },
+    "3": {
+      "item": "prova:topazio"
+    },
+    "5": {
+      "item": "prova:topazio"
+    }
+  },
+  "result": {
+    "item": "prova:topazio_armor_helmet",
+    "count": 1
+  }
+}

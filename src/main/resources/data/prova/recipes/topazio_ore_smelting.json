@@ -1,0 +1,12 @@
+{
+  "group": "prova",
+  "type": "minecraft:smelting",
+  "experience": 2.4499999999999997,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "prova:topazio_ore"
+  },
+  "result": {
+    "item": "prova:topazio"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "prova:items/attrezi_rubino_sword"
+  }
+}

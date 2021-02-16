@@ -1,3 +1,27 @@
 {
-  "item.prova.rubino": "Rubino"
+  "block.prova.topazio_block": "Block of Topazio",
+  "block.prova.rubino_block": "Block of Rubino",
+  "item.prova.topazio_pickaxe": "Topazio Pickaxe",
+  "item.prova.rubino": "Rubino",
+  "item.prova.armaturarubino_chestplate": "rubino Body",
+  "item.prova.attrezi_rubino_sword": "Attrezi_rubino Sword",
+  "itemGroup.tabeternamod": "Eternamod",
+  "item.prova.armaturarubino_helmet": "rubino Helmet",
+  "item.prova.topazio": "Topazio",
+  "item.prova.armaturarubino_leggings": "rubino Leggings",
+  "item.prova.attrezi_rubino_axe": "Attrezi_rubino Axe",
+  "item.prova.topazio_armor_leggings": "Topazio Leggings",
+  "item.prova.topazio_hoe": "Topazio Hoe",
+  "item.prova.attrezi_rubino_hoe": "Attrezi_rubino Hoe",
+  "block.prova.rubino_ore": "Rubino Ore",
+  "item.prova.topazio_armor_chestplate": "Topazio Chestplate",
+  "item.prova.topazio_axe": "Topazio Axe",
+  "item.prova.topazio_sword": "Topazio Sword",
+  "item.prova.topazio_shovel": "Topazio Shovel",
+  "item.prova.armaturarubino_boots": "rubino Boots",
+  "item.prova.topazio_armor_helmet": "Topazio Helmet",
+  "item.prova.topazio_armor_boots": "Topazio Boots",
+  "item.prova.attrezi_rubino_shovel": "Attrezi_rubino Shovel",
+  "block.prova.topazio_ore": "Topazio Ore",
+  "item.prova.attrezi_rubino_pickaxe": "Attrezi_rubino Pickaxe"
 }

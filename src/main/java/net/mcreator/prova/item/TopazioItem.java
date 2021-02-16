@@ -5,18 +5,18 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.prova.itemgroup.EternamodItemGroup;
 import net.mcreator.prova.ProvaModElements;
 
 @ProvaModElements.ModElement.Tag
-public class RubinoItem extends ProvaModElements.ModElement {
-	@ObjectHolder("prova:rubino")
+public class TopazioItem extends ProvaModElements.ModElement {
+	@ObjectHolder("prova:topazio")
 	public static final Item block = null;
-	public RubinoItem(ProvaModElements instance) {
-		super(instance, 4);
+	public TopazioItem(ProvaModElements instance) {
+		super(instance, 20);
 	}
 
 	@Override
@@ -25,8 +25,8 @@ public class RubinoItem extends ProvaModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(EternamodItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("rubino");
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
+			setRegistryName("topazio");
 		}
 
 		@Override
