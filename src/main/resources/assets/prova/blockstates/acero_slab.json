@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "prova:block/acero_slab"
+    },
+    "type=top": {
+      "model": "prova:block/acero_slab_top"
+    },
+    "type=double": {
+      "model": "prova:block/acero_slab_full"
+    }
+  }
+}

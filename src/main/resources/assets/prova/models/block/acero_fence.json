@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "prova:blocks/acero_planks",
+    "particle": "prova:blocks/acero_planks"
+  }
+}

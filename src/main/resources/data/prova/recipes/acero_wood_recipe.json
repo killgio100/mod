@@ -1,0 +1,26 @@
+{
+  "group": "prova",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "prova:acero_log"
+    },
+    "1": {
+      "item": "prova:acero_log"
+    },
+    "2": {
+      "item": "prova:acero_log"
+    },
+    "3": {
+      "item": "prova:acero_log"
+    }
+  },
+  "result": {
+    "item": "prova:acero_wood",
+    "count": 3
+  }
+}

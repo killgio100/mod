@@ -1,0 +1,32 @@
+{
+  "group": "prova",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "prova:acero_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "prova:acero_planks"
+    },
+    "3": {
+      "item": "prova:acero_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "prova:acero_planks"
+    }
+  },
+  "result": {
+    "item": "prova:acero_fence",
+    "count": 3
+  }
+}
