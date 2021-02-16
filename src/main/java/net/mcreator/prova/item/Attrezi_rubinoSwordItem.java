@@ -32,7 +32,7 @@ public class Attrezi_rubinoSwordItem extends ProvaModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 4f;
+				return 16f;
 			}
 
 			public int getHarvestLevel() {

@@ -32,7 +32,7 @@ public class TopazioAxeItem extends ProvaModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 5f;
+				return 30f;
 			}
 
 			public int getHarvestLevel() {

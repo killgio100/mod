@@ -14,7 +14,7 @@ import net.mcreator.prova.ProvaModElements;
 
 @ProvaModElements.ModElement.Tag
 public class Attrezi_rubinoPickaxeItem extends ProvaModElements.ModElement {
-	@ObjectHolder("prova:attrezi_rubino_pickaxe")
+	@ObjectHolder("prova:rubino_pickaxe")
 	public static final Item block = null;
 	public Attrezi_rubinoPickaxeItem(ProvaModElements instance) {
 		super(instance, 10);
@@ -47,6 +47,6 @@ public class Attrezi_rubinoPickaxeItem extends ProvaModElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(RubinoItem.block, (int) (1)));
 			}
 		}, 1, -3f, new Item.Properties().group(EternamodItemGroup.tab)) {
-		}.setRegistryName("attrezi_rubino_pickaxe"));
+		}.setRegistryName("rubino_pickaxe"));
 	}
 }

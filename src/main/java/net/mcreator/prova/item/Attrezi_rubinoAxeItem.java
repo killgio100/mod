@@ -5,11 +5,11 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.AxeItem;
 
+import net.mcreator.prova.itemgroup.EternamodItemGroup;
 import net.mcreator.prova.ProvaModElements;
 
 @ProvaModElements.ModElement.Tag
@@ -32,7 +32,7 @@ public class Attrezi_rubinoAxeItem extends ProvaModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 4f;
+				return 25f;
 			}
 
 			public int getHarvestLevel() {
@@ -46,7 +46,7 @@ public class Attrezi_rubinoAxeItem extends ProvaModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(RubinoItem.block, (int) (1)));
 			}
-		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 1, -3f, new Item.Properties().group(EternamodItemGroup.tab)) {
 		}.setRegistryName("attrezi_rubino_axe"));
 	}
 }

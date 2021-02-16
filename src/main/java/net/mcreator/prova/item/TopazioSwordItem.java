@@ -32,7 +32,7 @@ public class TopazioSwordItem extends ProvaModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 5f;
+				return 19f;
 			}
 
 			public int getHarvestLevel() {

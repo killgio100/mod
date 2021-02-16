@@ -9,7 +9,8 @@
   "item.prova.armaturarubino_helmet": "rubino Helmet",
   "item.prova.topazio": "Topazio",
   "item.prova.armaturarubino_leggings": "rubino Leggings",
-  "item.prova.attrezi_rubino_axe": "Attrezi_rubino Axe",
+  "item.prova.rubino_pickaxe": "rubino Pickaxe",
+  "item.prova.attrezi_rubino_axe": "rubino Axe",
   "item.prova.topazio_armor_leggings": "Topazio Leggings",
   "item.prova.topazio_hoe": "Topazio Hoe",
   "item.prova.attrezi_rubino_hoe": "Attrezi_rubino Hoe",
@@ -22,6 +23,5 @@
   "item.prova.topazio_armor_helmet": "Topazio Helmet",
   "item.prova.topazio_armor_boots": "Topazio Boots",
   "item.prova.attrezi_rubino_shovel": "Attrezi_rubino Shovel",
-  "block.prova.topazio_ore": "Topazio Ore",
-  "item.prova.attrezi_rubino_pickaxe": "Attrezi_rubino Pickaxe"
+  "block.prova.topazio_ore": "Topazio Ore"
 }
