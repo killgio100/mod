@@ -534,6 +534,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "aceri"
+    },
+    {
+      "name": "Flower1",
+      "type": "plant",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flower_1"
     }
   ],
   "variable_elements": [],
@@ -578,6 +587,7 @@
       "block.prova.acero_slab": "Acero Slab",
       "block.prova.acero_fence": "Acero Fence",
       "item.prova.topazio_armor_helmet": "Topazio Helmet",
+      "block.prova.flower_1": "Flower 1",
       "item.prova.topazio_armor_boots": "Topazio Boots",
       "item.prova.attrezi_rubino_shovel": "Attrezi_rubino Shovel",
       "block.prova.topazio_ore": "Topazio Ore"

@@ -20,7 +20,6 @@ import net.minecraft.world.gen.feature.structure.OceanRuinStructure;
 import net.minecraft.world.gen.feature.structure.OceanRuinConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftStructure;
 import net.minecraft.world.gen.feature.structure.MineshaftConfig;
-import net.minecraft.world.gen.feature.SphereReplaceConfig;
 import net.minecraft.world.gen.feature.SeaGrassConfig;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
@@ -49,8 +48,6 @@ import net.mcreator.prova.ProvaModElements;
 import java.util.Set;
 import java.util.Random;
 
-import com.google.common.collect.Lists;
-
 @ProvaModElements.ModElement.Tag
 public class AceriBiome extends ProvaModElements.ModElement {
 	@ObjectHolder("prova:aceri")
@@ -72,10 +69,10 @@ public class AceriBiome extends ProvaModElements.ModElement {
 	}
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
-			super(new Biome.Builder().downfall(0.3f).depth(0.5f).scale(0.5f).temperature(1f).precipitation(Biome.RainType.RAIN)
+			super(new Biome.Builder().downfall(0f).depth(0.5f).scale(0.5f).temperature(1f).precipitation(Biome.RainType.NONE)
 					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011).parent("swamp")
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
-							Blocks.STONE.getDefaultState(), Blocks.STONE.getDefaultState())));
+							Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState())));
 			setRegistryName("aceri");
 			DefaultBiomeFeatures.addCarvers(this);
 			DefaultBiomeFeatures.addMonsterRooms(this);
@@ -96,16 +93,9 @@ public class AceriBiome extends ProvaModElements.ModElement {
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 					new CustomTreeFeature()
 							.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(AceroLogBlock.block.getDefaultState()),
-									new SimpleBlockStateProvider(AceroLeavesBlock.block.getDefaultState()))).baseHeight(2)
+									new SimpleBlockStateProvider(Blocks.VOID_AIR.getDefaultState()))).baseHeight(1)
 											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.SUGAR_CANE_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(2))));
-			addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
-					Feature.DISK
-							.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), 6, 2,
-									Lists.newArrayList(Blocks.GRASS_BLOCK.getDefaultState(), Blocks.STONE.getDefaultState())))
-							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(2))));
 		}
 
 		@OnlyIn(Dist.CLIENT)
@@ -126,7 +116,7 @@ public class AceriBiome extends ProvaModElements.ModElement {
 			if (!(worldgen instanceof IWorld))
 				return false;
 			IWorld world = (IWorld) worldgen;
-			int height = rand.nextInt(5) + 2;
+			int height = rand.nextInt(5) + 1;
 			boolean spawnTree = true;
 			if (position.getY() >= 1 && position.getY() + height + 1 <= world.getHeight()) {
 				for (int j = position.getY(); j <= position.getY() + 1 + height; j++) {
@@ -152,12 +142,12 @@ public class AceriBiome extends ProvaModElements.ModElement {
 				} else {
 					Block ground = world.getBlockState(position.add(0, -1, 0)).getBlock();
 					Block ground2 = world.getBlockState(position.add(0, -2, 0)).getBlock();
-					if (!((ground == Blocks.GRASS_BLOCK.getDefaultState().getBlock() || ground == Blocks.STONE.getDefaultState().getBlock())
-							&& (ground2 == Blocks.GRASS_BLOCK.getDefaultState().getBlock() || ground2 == Blocks.STONE.getDefaultState().getBlock())))
+					if (!((ground == Blocks.GRASS_BLOCK.getDefaultState().getBlock() || ground == Blocks.DIRT.getDefaultState().getBlock())
+							&& (ground2 == Blocks.GRASS_BLOCK.getDefaultState().getBlock() || ground2 == Blocks.DIRT.getDefaultState().getBlock())))
 						return false;
 					BlockState state = world.getBlockState(position.down());
 					if (position.getY() < world.getHeight() - height - 1) {
-						setTreeBlockState(changedBlocks, world, position.down(), Blocks.STONE.getDefaultState(), bbox);
+						setTreeBlockState(changedBlocks, world, position.down(), Blocks.DIRT.getDefaultState(), bbox);
 						for (int genh = position.getY() - 3 + height; genh <= position.getY() + height; genh++) {
 							int i4 = genh - (position.getY() + height);
 							int j1 = (int) (1 - i4 * 0.5);
@@ -168,10 +158,9 @@ public class AceriBiome extends ProvaModElements.ModElement {
 										BlockPos blockpos = new BlockPos(k1, genh, i2);
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getMaterial().blocksMovement()
-												|| state.isIn(BlockTags.LEAVES)
-												|| state.getBlock() == AceroLeavesBlock.block.getDefaultState().getBlock()
-												|| state.getBlock() == AceroLeavesBlock.block.getDefaultState().getBlock()) {
-											setTreeBlockState(changedBlocks, world, blockpos, AceroLeavesBlock.block.getDefaultState(), bbox);
+												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock()
+												|| state.getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock()) {
+											setTreeBlockState(changedBlocks, world, blockpos, Blocks.VOID_AIR.getDefaultState(), bbox);
 										}
 									}
 								}
@@ -182,45 +171,8 @@ public class AceriBiome extends ProvaModElements.ModElement {
 							state = world.getBlockState(genhPos);
 							setTreeBlockState(changedBlocks, world, genhPos, AceroLogBlock.block.getDefaultState(), bbox);
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
-									|| state.getBlock() == AceroLeavesBlock.block.getDefaultState().getBlock()
-									|| state.getBlock() == AceroLeavesBlock.block.getDefaultState().getBlock()) {
-								if (genh > 0) {
-									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), AceroLeavesBlock.block.getDefaultState(),
-												bbox);
-									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), AceroLeavesBlock.block.getDefaultState(),
-												bbox);
-									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, -1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), AceroLeavesBlock.block.getDefaultState(),
-												bbox);
-									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, 1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), AceroLeavesBlock.block.getDefaultState(),
-												bbox);
-								}
-							}
-						}
-						for (int genh = position.getY() - 3 + height; genh <= position.getY() + height; genh++) {
-							int k4 = (int) (1 - (genh - (position.getY() + height)) * 0.5);
-							for (int genx = position.getX() - k4; genx <= position.getX() + k4; genx++) {
-								for (int genz = position.getZ() - k4; genz <= position.getZ() + k4; genz++) {
-									BlockPos bpos = new BlockPos(genx, genh, genz);
-									state = world.getBlockState(bpos);
-									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == AceroLeavesBlock.block.getDefaultState().getBlock()) {
-										BlockPos blockpos1 = bpos.south();
-										BlockPos blockpos2 = bpos.west();
-										BlockPos blockpos3 = bpos.east();
-										BlockPos blockpos4 = bpos.north();
-										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos2))
-											this.addVines(world, blockpos2, changedBlocks, bbox);
-										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos3))
-											this.addVines(world, blockpos3, changedBlocks, bbox);
-										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos4))
-											this.addVines(world, blockpos4, changedBlocks, bbox);
-										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos1))
-											this.addVines(world, blockpos1, changedBlocks, bbox);
-									}
-								}
+									|| state.getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock()
+									|| state.getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock()) {
 							}
 						}
 						if (rand.nextInt(4) == 0 && height > 5) {
@@ -245,18 +197,18 @@ public class AceriBiome extends ProvaModElements.ModElement {
 		}
 
 		private void addVines(IWorld world, BlockPos pos, Set<BlockPos> changedBlocks, MutableBoundingBox bbox) {
-			setTreeBlockState(changedBlocks, world, pos, AceroLeavesBlock.block.getDefaultState(), bbox);
+			setTreeBlockState(changedBlocks, world, pos, Blocks.VOID_AIR.getDefaultState(), bbox);
 			int i = 5;
 			for (BlockPos blockpos = pos.down(); world.isAirBlock(blockpos) && i > 0; --i) {
-				setTreeBlockState(changedBlocks, world, blockpos, AceroLeavesBlock.block.getDefaultState(), bbox);
+				setTreeBlockState(changedBlocks, world, blockpos, Blocks.VOID_AIR.getDefaultState(), bbox);
 				blockpos = blockpos.down();
 			}
 		}
 
 		private boolean canGrowInto(Block blockType) {
 			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == AceroLogBlock.block.getDefaultState().getBlock()
-					|| blockType == AceroLeavesBlock.block.getDefaultState().getBlock()
-					|| blockType == Blocks.GRASS_BLOCK.getDefaultState().getBlock() || blockType == Blocks.STONE.getDefaultState().getBlock();
+					|| blockType == Blocks.VOID_AIR.getDefaultState().getBlock() || blockType == Blocks.GRASS_BLOCK.getDefaultState().getBlock()
+					|| blockType == Blocks.DIRT.getDefaultState().getBlock();
 		}
 
 		private boolean isReplaceable(IWorld world, BlockPos pos) {
