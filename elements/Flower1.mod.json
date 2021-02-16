@@ -3,11 +3,11 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "up_flower_1",
+    "texture": "flower_2",
     "textureBottom": "",
     "customModelName": "Cross model",
-    "itemTexture": "up_flower_1",
-    "particleTexture": "up_flower_1",
+    "itemTexture": "flower_2_1",
+    "particleTexture": "",
     "plantType": "normal",
     "staticPlantGenerationType": "Flower",
     "growapableSpawnType": "Plains",
@@ -29,7 +29,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": "Blocks.RED_FLOWER#0"
+      "value": "CUSTOM:Flower2"
     },
     "dropAmount": 1,
     "forceTicking": false,
@@ -38,7 +38,7 @@
     "isReplaceable": true,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": "Blocks.RED_FLOWER#0"
+      "value": "CUSTOM:Flower2"
     },
     "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",

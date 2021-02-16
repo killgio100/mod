@@ -40,11 +40,11 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FlowerBlock;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.prova.itemgroup.EternamodItemGroup;
+import net.mcreator.prova.item.Flower2Item;
 import net.mcreator.prova.ProvaModElements;
 
 import java.util.Random;
@@ -135,7 +135,7 @@ public class Flower1Block extends ProvaModElements.ModElement {
 
 		@Override
 		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
-			return new ItemStack(Blocks.POPPY, (int) (1));
+			return new ItemStack(Flower2Item.block, (int) (1));
 		}
 
 		@Override
@@ -143,7 +143,7 @@ public class Flower1Block extends ProvaModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(Blocks.POPPY, (int) (1)));
+			return Collections.singletonList(new ItemStack(Flower2Item.block, (int) (1)));
 		}
 
 		@Override

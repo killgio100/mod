@@ -543,6 +543,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "flower_1"
+    },
+    {
+      "name": "Flower2",
+      "type": "item",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flower_2"
     }
   ],
   "variable_elements": [],
@@ -574,6 +583,7 @@
       "item.minecraft.tipped_arrow.effect.superr": "Arrow of Superr",
       "item.prova.topazio_hoe": "Topazio Hoe",
       "item.prova.attrezi_rubino_hoe": "Attrezi_rubino Hoe",
+      "item.prova.flower_2": "Flower 2",
       "block.prova.rubino_ore": "Rubino Ore",
       "block.prova.acero_wood": "Acero Wood",
       "advancements.bioma.title": "topazio?",
