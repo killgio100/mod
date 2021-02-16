@@ -9,12 +9,23 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "prova"
+    },
+    {
+      "name": "Rubino",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubino"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.prova.rubino": "Rubino"
+    }
   },
   "workspaceSettings": {
     "modid": "prova",
