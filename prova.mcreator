@@ -1,6 +1,16 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Prova",
+      "type": "gui",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "prova"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {

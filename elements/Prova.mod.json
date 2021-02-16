@@ -1,0 +1,54 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "ricerca",
+          "width": 120,
+          "height": 20,
+          "name": "prova",
+          "x": 152,
+          "y": 43
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 202,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "prova",
+          "color": {
+            "value": -13421569,
+            "falpha": 0.0
+          },
+          "name": "prova",
+          "x": 197,
+          "y": 69
+        }
+      }
+    ]
+  }
+}
