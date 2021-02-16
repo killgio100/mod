@@ -11,7 +11,7 @@
     },
     "treeType": 1,
     "vanillaTreeType": "Savanna trees",
-    "minHeight": 1,
+    "minHeight": 2,
     "spawnVines": false,
     "treeVines": {
       "value": "Blocks.VOID_AIR"
@@ -31,8 +31,8 @@
     },
     "treesPerChunk": 3,
     "grassPerChunk": 5,
-    "seagrassPerChunk": 20,
-    "flowersPerChunk": 6,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 3,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPathcesPerChunk": 0,
@@ -44,7 +44,7 @@
     "baseHeight": 0.5,
     "heightVariation": 0.5,
     "spawnBiome": true,
-    "biomeWeight": 15,
+    "biomeWeight": 12,
     "biomeType": "WARM",
     "biomeCategory": "NONE",
     "parent": {
@@ -60,9 +60,10 @@
     "spawnIgloo": false,
     "spawnOceanMonument": false,
     "spawnShipwreck": true,
-    "oceanRuinType": "COLD",
+    "oceanRuinType": "WARM",
     "biomeDictionaryTypes": [
-      "MAGICAL"
+      "FOREST",
+      "MODIFIED"
     ],
     "defaultFeatures": [
       "Caves",

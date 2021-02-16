@@ -1,7 +1,7 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "prova:blocks/flower_2",
-    "particle": "prova:blocks/flower_2"
+    "cross": "prova:blocks/flower_3",
+    "particle": "prova:blocks/flower_3"
   }
 }
