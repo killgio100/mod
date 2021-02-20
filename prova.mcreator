@@ -552,6 +552,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "flower_2"
+    },
+    {
+      "name": "Bohgui",
+      "type": "gui",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bohgui"
+    },
+    {
+      "name": "Thisisboh",
+      "type": "painting",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thisisboh"
+    },
+    {
+      "name": "Boh",
+      "type": "block",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "boh"
     }
   ],
   "variable_elements": [],
@@ -587,6 +614,7 @@
       "block.prova.rubino_ore": "Rubino Ore",
       "block.prova.acero_wood": "Acero Wood",
       "advancements.bioma.title": "topazio?",
+      "block.prova.boh": "Boh",
       "block.prova.acero_stairs": "Acero Stairs",
       "item.prova.topazio_armor_chestplate": "Topazio Chestplate",
       "item.prova.topazio_axe": "Topazio Axe",
