@@ -1,0 +1,29 @@
+{
+  "group": "prova",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "prova:platino_ingot"
+    },
+    "1": {
+      "item": "prova:platino_ingot"
+    },
+    "2": {
+      "item": "prova:platino_ingot"
+    },
+    "3": {
+      "item": "prova:platino_ingot"
+    },
+    "5": {
+      "item": "prova:platino_ingot"
+    }
+  },
+  "result": {
+    "item": "prova:platino_armor_helmet",
+    "count": 1
+  }
+}

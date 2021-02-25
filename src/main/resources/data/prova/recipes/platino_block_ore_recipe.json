@@ -1,0 +1,13 @@
+{
+  "group": "prova",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "prova:platino_block"
+    }
+  ],
+  "result": {
+    "item": "prova:platino_ingot",
+    "count": 9
+  }
+}
