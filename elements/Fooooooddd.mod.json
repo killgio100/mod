@@ -1,0 +1,28 @@
+{
+  "_fv": 13,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "fooooooddd",
+    "customModelName": "Normal",
+    "name": "Fooooooddd",
+    "rarity": "EPIC",
+    "specialInfo": [
+      "wow is a fooooooddd"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Eternamod"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 4,
+    "saturation": 4.6,
+    "eatingSpeed": 20,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": true,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}
