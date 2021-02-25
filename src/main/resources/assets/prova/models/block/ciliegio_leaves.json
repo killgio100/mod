@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "prova:blocks/ciliegio_leaves",
+    "particle": "prova:blocks/ciliegio_leaves"
+  }
+}

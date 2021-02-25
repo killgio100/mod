@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "prova:blocks/ciliegio_planks",
+    "particle": "prova:blocks/ciliegio_planks"
+  }
+}

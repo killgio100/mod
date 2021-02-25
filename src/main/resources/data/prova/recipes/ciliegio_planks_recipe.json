@@ -1,0 +1,13 @@
+{
+  "group": "prova",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:ciliegio_log"
+    }
+  ],
+  "result": {
+    "item": "prova:ciliegio_planks",
+    "count": 4
+  }
+}
