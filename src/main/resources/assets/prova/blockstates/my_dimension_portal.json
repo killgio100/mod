@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "prova:block/my_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "prova:block/my_dimension_portal_ns"
+    }
+  }
+}
