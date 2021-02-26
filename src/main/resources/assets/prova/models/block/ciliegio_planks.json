@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "prova:blocks/ciliegio_planks",
-    "particle": "prova:blocks/ciliegio_planks"
-  }
-}

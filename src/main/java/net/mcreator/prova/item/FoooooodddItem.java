@@ -9,11 +9,11 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.client.util.ITooltipFlag;
 
-import net.mcreator.prova.itemgroup.EternamodItemGroup;
 import net.mcreator.prova.ProvaModElements;
 
 import java.util.List;
@@ -32,7 +32,7 @@ public class FoooooodddItem extends ProvaModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(EternamodItemGroup.tab).maxStackSize(64).rarity(Rarity.EPIC)
+			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64).rarity(Rarity.EPIC)
 					.food((new Food.Builder()).hunger(4).saturation(4.6f).setAlwaysEdible().meat().build()));
 			setRegistryName("fooooooddd");
 		}

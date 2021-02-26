@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "prova:blocks/acero_log_side",
-    "particle": "prova:blocks/acero_log_side"
-  }
-}

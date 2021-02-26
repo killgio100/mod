@@ -1,8 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "prova:blocks/ciliegio_planks",
-    "top": "prova:blocks/ciliegio_planks",
-    "side": "prova:blocks/ciliegio_planks"
-  }
-}

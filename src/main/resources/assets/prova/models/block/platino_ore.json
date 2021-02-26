@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "prova:blocks/platino_ore",
-    "particle": "prova:blocks/platino_ore"
-  }
-}
